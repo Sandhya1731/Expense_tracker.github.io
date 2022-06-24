@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense-Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">
+            <h1 class="title">My Budget<a href="#"><i class=""></i></a></h1>
+        </div>
+        <h3>New Entry</h3>
+        <form action="" id="form">
+            <div class="form-control">
+                <label for="text">Description</label>
+                <input type="text" id="text" onfocus="this.value=''" placeholder="Enter text....">
+            </div> 
+            <div class="form-control">
+                <label for="text">Amount(+/-)</label>
+                <input type="number" id="amount" onfocus="this.value=''" placeholder="Enter value....">
+            </div>
+            <button class="btn">Add transaction</button>
+        </form>
+
+        <div class="income-expenses">
+        <div class="bg-light">
+            <h4>Inflow</h4>
+            <p id="income">Rs 0.00</p>
+        </div>
+        <div class="bg-light">
+            <h4>Outflow</h4>
+            <p id="expense">Rs 0.00</p>
+        </div>
+        <div class="bg-light">
+            <h4>Balance</h4>
+            <p id="balance">Rs 0.00</p>
+        </div>
+        </div>
+        <p id="error_msg"></p>
+        <h3>History</h3>
+        <ul id="list" class="list"></ul>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+
+</html>
